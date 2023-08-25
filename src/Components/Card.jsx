@@ -11,7 +11,8 @@ const card = () => {
       if (isNaN(result)) {
         throw new Error("input must be a number");
       }
-      document.getElementById("result").textContent = "Result: " + result;
+      document.getElementById("result").textContent =
+        `Result: ${num1} + ${num2} = ` + result;
     } catch (e) {
       throw new Error(e.message);
     }
