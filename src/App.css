@@ -1,5 +1,5 @@
 #root {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -7,7 +7,7 @@
 
 .logo {
   height: 6em;
-  padding: 1.5em;
+  padding: 0.5em 0.5em;
   will-change: filter;
   transition: filter 300ms;
 }
@@ -28,7 +28,7 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
+  a:nth-of-type(1) .logo {
     animation: logo-spin infinite 20s linear;
   }
 }
@@ -36,7 +36,69 @@
 .card {
   padding: 2em;
 }
-
-.read-the-docs {
-  color: #888;
+/*kkk*/
+.card-list {
+  display: flex;
+  width: 100%;
+  gap: 25px;
 }
+.basic-card-aqua {
+  height: 300px;
+  width: 300px;
+  background-image: linear-gradient(to bottom right, #00bfad, #99a3d4);
+}
+.basic-card-aqua .card-title {
+  font-size: 30px;
+  padding: 10px;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+}
+.basic-card-aqua .card-body {
+  height: 60%;
+
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+.input-field div {
+  padding: 5px;
+}
+.input-field label {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0 8px;
+}
+.input-field input {
+  font-size: 16px;
+}
+.buttonn {
+  margin-top: 15px;
+}
+.card-body button {
+  background: #4b7fdd;
+  border-radius: 999px;
+  box-shadow: #54545c 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 15px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+.card-body button:focus {
+  outline: none;
+}
+.card-body button:hover {
+  background: #5cc75a;
+}
+/* kkkk */
