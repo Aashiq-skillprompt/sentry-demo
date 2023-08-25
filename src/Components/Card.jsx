@@ -7,7 +7,7 @@ const card = () => {
       const num1 = parseFloat(document.getElementById("num1").value);
       const num2 = parseFloat(document.getElementById("num2").value);
 
-      const result = num1 / num2;
+      const result = num1 + num2 + 1;
       if (isNaN(result)) {
         throw new Error("input must be a number");
       }
@@ -35,7 +35,7 @@ const card = () => {
         {/* card1 */}
         <div className="basic-card-aqua">
           <div className="card-title">
-            <span>Manual Error</span>
+            <span>Logical Error</span>
           </div>
           <div className="card-body">
             <div className="input-field">
@@ -52,7 +52,7 @@ const card = () => {
             </div>
             <div className="buttonn">
               <button type="button" onClick={simulateManualError}>
-                Trigger Manual Error
+                Add
               </button>
             </div>
           </div>
@@ -65,7 +65,7 @@ const card = () => {
           <div className="card-body">
             <div className="buttonn">
               <button type="button" onClick={simulateReferenceError}>
-                Trigger Reference Error
+                Trigger Error
               </button>
             </div>
           </div>
@@ -78,7 +78,7 @@ const card = () => {
           <div className="card-body">
             <div className="buttonn">
               <button type="button" onClick={simulateTypeError}>
-                Trigger Type Error
+                Trigger Error
               </button>
             </div>
           </div>
